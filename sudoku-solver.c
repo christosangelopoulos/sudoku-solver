@@ -1267,8 +1267,6 @@ for (a=0;a<9;a++)
 
 int *match_sq = (int*) malloc(9 * sizeof(int));
 
-//allocate MSQ 3d array, containing all possible solutions to INPART
-
 //Thanks to Alexandros and Theodora that gave me the right answer at the same time,helping me writing the following loop!
 
 printf("\nPrinting match_sq\n");
@@ -1284,6 +1282,7 @@ for (x=0;x<9;x++)
 	printf("sq %d solutions : %d\n",x,c);
 }
 
+//allocate MSQ 3d array, containing all possible solutions to INPART
 int ****MSQ;
 x=9;
 y=3;
