@@ -37,3 +37,8 @@ A script in C language that can sove sudoku riddles.
 * The sudoku solver will brute force its way to the solution:
 
 ![5.png](png/5.png)
+
+Solving the sudoku riddle can take from  a fraction of  a second to a couple of minutes, depending on
+
+* the difficulty of the riddle and 
+* the CPU's calculating speed.
