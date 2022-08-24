@@ -1269,31 +1269,8 @@ int *match_sq = (int*) malloc(9 * sizeof(int));
 
 //allocate MSQ 3d array, containing all possible solutions to INPART
 
-//Thanks to Alexandros and Theodora that gave me the right answer at the same time!
+//Thanks to Alexandros and Theodora that gave me the right answer at the same time,helping me writing the following loop!
 
-/*
-for (a=0;a<9;a++)
-{
-if (9-inpnum[a] == 1)
-{match_sq[a]=1;}
-if (9-inpnum[a] == 2)
-{match_sq[a]=2;}
-if (9-inpnum[a] == 3)
-{match_sq[a]=6;}
-if (9-inpnum[a] == 4)
-{match_sq[a]=24;}
-if (9-inpnum[a] == 5)
-{match_sq[a]=120;}
-if (9-inpnum[a] == 6)
-{match_sq[a]=720;}
-if (9-inpnum[a] == 7)
-{match_sq[a]=5040;}
-if (9-inpnum[a] == 8)
-{match_sq[a]=40320;}
-if (9-inpnum[a] == 9)
-{match_sq[a]=362880;}
-}
-*/
 printf("\nPrinting match_sq\n");
 for (x=0;x<9;x++)
 {
