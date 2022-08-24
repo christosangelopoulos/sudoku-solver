@@ -38,7 +38,6 @@ printf("   ╚═══╧═══╧═══╩═══╧═══╧══
 
 void columns(int *****A,int **match,int *****MC)
 {
-printf("columns function\n");
 int a0,m0,m1,m2;
 int b;
 int c;
@@ -1269,10 +1268,10 @@ for (a=0;a<9;a++)
 int *match_sq = (int*) malloc(9 * sizeof(int));
 
 //allocate MSQ 3d array, containing all possible solutions to INPART
-//TODO:apply maths to the code below to calculate the match_sq[a] values
+
 //Thanks to Alexandros and Theodora that gave me the right answer at the same time!
 
-
+/*
 for (a=0;a<9;a++)
 {
 if (9-inpnum[a] == 1)
@@ -1293,7 +1292,19 @@ if (9-inpnum[a] == 8)
 {match_sq[a]=40320;}
 if (9-inpnum[a] == 9)
 {match_sq[a]=362880;}
-
+}
+*/
+printf("\nPrinting match_sq\n");
+for (x=0;x<9;x++)
+{
+	c=1;
+	a=9-inpnum[x];
+	for (b=1;b<=a;b++)
+	{
+		c=c*b;
+	}//b
+	match_sq[x]=c;
+	printf("sq %d solutions : %d\n",x,c);
 }
 
 int ****MSQ;
@@ -1839,7 +1850,7 @@ x=0;
 	}//for a
 }//for d
 
-printf("Printing match_l\n");
+printf("\nPrinting match_l\n");
 for (d=0;d<9;d++)
 {
 	printf("sq %d solutions : %d \n",d,match_l[d]);
@@ -1894,7 +1905,7 @@ x=0;
 	}//for a
 }//for d
 
-printf("Printing match_c\n");
+printf("\nPrinting match_c\n");
 for (d=0;d<9;d++)
 {
 	printf("sq %d solutions : %d \n",d,match_c[d]);
