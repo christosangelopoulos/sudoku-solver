@@ -3,15 +3,16 @@ A script in C language that can sove sudoku riddles.
 
 ## INSTRUCTIONS
 
-* After you have downloaded and compiled
-
-     gcc sudoku_solver.c -Wall -o sudoku_solver
+* After you have downloaded and compiled the sudoku solver,
 
 
+> gcc sudoku_solver.c -Wall -o sudoku_solver
 
-the sudoku solver, run the script:
 
-     ./sudoku-solver
+
+ run the script:
+
+>./sudoku-solver
 
 * You will be prompted to enter the data of the sudoku riddle.
 
